@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7eee9"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Taipei Trip">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png">
+<title>Taipei Girls Trip</title>
+<style>
+:root{--bg:#fbf7f4;--paper:#fff;--ink:#332d2a;--muted:#857a73;--pink:#d98f91;--rose:#f4e1df;--line:#eee3de;--green:#638875;--shadow:0 8px 26px #4a30200d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif}
+header{padding:calc(18px + env(safe-area-inset-top)) 18px 18px;background:linear-gradient(135deg,#f7e7e2,#f8f1e9)}
+.wrap{max-width:760px;margin:auto}h1{font-size:25px;margin:4px 0;font-weight:800;letter-spacing:.02em}.sub{color:#806f68;font-size:12px}.topline{display:flex;justify-content:space-between;align-items:center}.pill{background:#fff9;border-radius:99px;padding:5px 10px;font-size:11px}
+nav{display:flex;gap:7px;overflow:auto;padding:10px 12px;background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}
+nav button{border:0;background:#f7f1ee;color:#776b65;padding:9px 13px;border-radius:99px;white-space:nowrap;font-weight:650}nav button.active{background:#453a36;color:white}
+main{padding:16px 14px 100px;max-width:760px;margin:auto}.hero{border-radius:20px;background:#fff;padding:18px;box-shadow:var(--shadow);margin-bottom:14px}
+h2{font-size:18px;margin:0 0 12px}h3{font-size:15px;margin:0 0 6px}.muted{color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:#fbf6f3;border-radius:14px;padding:12px}.stat b{display:block;font-size:18px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:15px;margin:10px 0;box-shadow:var(--shadow)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.tag{font-size:11px;border-radius:99px;background:#f5e8e5;color:#9b6264;padding:4px 8px}.tag.green{background:#e8f1eb;color:#4c765e}
+button,.btn{font:inherit;cursor:pointer}.action{border:0;border-radius:12px;padding:10px 13px;background:#473b37;color:white;font-weight:650}.secondary{background:#f4e9e5;color:#644e48}.small{font-size:12px;padding:7px 10px}.field{width:100%;border:1px solid var(--line);border-radius:11px;padding:10px;background:white;color:var(--ink);font:inherit;margin:4px 0 10px}
+label{font-size:12px;color:var(--muted)}.place{padding:12px 0;border-bottom:1px solid var(--line)}.place:last-child{border:0}.place p{margin:3px 0 8px;font-size:13px;color:var(--muted)}
+a{color:#946365;text-decoration:none;font-weight:650}.actions{display:flex;gap:8px;flex-wrap:wrap}.check{display:flex;gap:9px;align-items:center;padding:8px 0;border-bottom:1px solid #f2eae6}.check input{accent-color:#b9787b;width:18px;height:18px}
+textarea{min-height:90px;resize:vertical}.hidden{display:none!important}.notice{padding:11px;background:#f7f0e9;border-radius:12px;color:#79675d;font-size:12px;margin:10px 0}
+footer{text-align:center;color:#a1938c;font-size:11px;padding:20px}
+@media(min-width:600px){main{padding-left:22px;padding-right:22px}.grid.cols3{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="topline"><span class="pill">✿ 兩個女生的台北小旅行</span><span class="pill" id="modePill">私人編輯版</span></div>
+<h1>Taipei Girls Trip</h1><div class="sub">2026.12.28 — 2027.01.01　·　5 日 4 夜</div>
+</div></header>
+<nav id="nav">
+<button class="active" data-tab="home">總覽</button><button data-tab="days">每日行程</button><button data-tab="places">景點清單</button><button data-tab="packing">行李清單</button><button data-tab="booking">航班住宿</button><button data-tab="journal">旅行紀錄</button><button data-tab="settings">分享與設定</button>
+</nav>
+<main>
+<section id="home" class="tab">
+<div class="hero"><div class="row"><div><div class="muted">下一趟旅程</div><h2 style="font-size:23px;margin:2px 0">台北，慢慢玩。</h2></div><span class="tag green">資料自動保存</span></div>
+<div class="grid cols3"><div class="stat"><span class="muted">旅行日期</span><b>5 日 4 夜</b></div><div class="stat"><span class="muted">旅伴</span><b>2 位女生</b></div><div class="stat"><span class="muted">住宿區域</span><b>寧夏／大同</b></div></div></div>
+<div class="card"><h2>✈️ 重要提醒</h2><div class="row"><b>去程 CX488</b><span class="tag green">已訂</span></div><p>12/28 香港 08:00 → 桃園 09:40</p><div class="row"><b>回程 CX407</b><span class="tag green">已訂</span></div><p>1/1 桃園 08:00 → 香港 10:10</p><div class="notice">回程很早，建議預約凌晨機場接送；出發時間請按航空公司報到要求及當日交通確認。</div></div>
+<div class="card"><div class="row"><h2>🌤 台北天氣</h2><button class="action secondary small" id="weatherBtn">更新天氣</button></div><div id="weather" class="muted">按「更新天氣」查看台北目前天氣。旅行日期的預報通常需接近出發日才較可靠。</div></div>
+<div class="card"><h2>旅行重點</h2><p>大稻埕滷肉飯・迪化街・赤峰街文創・書店咖啡・松山文創・信義購物・寧夏夜市・跨年夜・一次按摩。</p></div>
+</section>
+
+<section id="days" class="tab hidden">
+<h2>每日行程</h2><div class="notice">交通時間為初步規劃估算，非即時路況。出發前點開 Google Maps 確認。</div>
+<div id="dayList"></div>
+</section>
+
+<section id="places" class="tab hidden">
+<div class="row"><h2>景點管理</h2><button class="action small" id="addPlace">＋ 新增</button></div>
+<div class="actions" style="margin-bottom:10px"><button class="action secondary small filter" data-filter="全部">全部</button><button class="action secondary small filter" data-filter="想去">想去</button><button class="action secondary small filter" data-filter="已去">已去</button><button class="action secondary small filter" data-filter="已預約">已預約</button></div>
+<div id="placeList"></div>
+</section>
+
+<section id="packing" class="tab hidden"><h2>行李 Checklist</h2><div id="packingList"></div></section>
+
+<section id="booking" class="tab hidden">
+<h2>航班及住宿</h2>
+<div class="card"><div class="row"><h3>去程｜國泰 CX488</h3><span class="tag green">已訂</span></div><b>12 月 28 日（一）08:00 → 09:40</b><p class="muted">香港 HKG → 台灣桃園 TPE · 特選經濟客艙</p><p>機票所列行李：手提 1 件 7kg；寄艙 2 件 23kg。</p></div>
+<div class="card"><div class="row"><h3>回程｜國泰 CX407</h3><span class="tag green">已訂</span></div><b>1 月 1 日（五）08:00 → 10:10</b><p class="muted">台灣桃園 TPE → 香港 HKG · 經濟客艙</p><p>機票所列行李：手提 1 件 7kg；寄艙 1 件 23kg。</p></div>
+<div class="card"><div class="row"><h3>藝宿商旅台北寧夏館</h3><span class="tag green">已預訂</span></div><b>12/28 入住 · 1/1 退房</b><p>台北市大同區重慶北路一段116號<br>Superior Twin Room · 2 位成人</p><p class="muted">電話：+886 2 2550 6655<br>Agoda 訂單編號：1783971298</p></div>
+<div class="notice">機票上傳文件顯示一位乘客的資料；酒店訂單為兩位成人。請確認朋友的機票及兩人的行李額。酒店金額與付款條款以 Agoda 訂單為準。</div>
+</section>
+
+<section id="journal" class="tab hidden">
+<h2>旅行紀錄</h2><label>今天的日期／主題</label><input id="journalTitle" class="field" placeholder="例如：12/28 大稻埕散步">
+<label>心得、餐廳、花費或想記住的事</label><textarea id="journalText" class="field" placeholder="寫下今天的旅行回憶…"></textarea><div class="actions"><button class="action" id="saveJournal">保存紀錄</button></div><div id="journalEntries"></div>
+</section>
+
+<section id="settings" class="tab hidden">
+<h2>分享與設定</h2>
+<div class="card"><h3>📤 分享給朋友（唯讀）</h3><p class="muted">匯出目前行程快照。朋友匯入後可查看，但不會同步你的後續修改。</p><button class="action" id="exportBtn">匯出朋友唯讀資料（JSON）</button></div>
+<div class="card"><h3>📥 還原／匯入資料</h3><p class="muted">可在另一部手機或重新安裝後匯入備份。匯入會取代目前 App 的行程資料。</p><input type="file" id="importFile" accept=".json,application/json" class="field"><button class="action secondary" id="importBtn">匯入 JSON 備份</button></div>
+<div class="card"><h3>🔒 資料保存</h3><p>你的修改會自動保存在目前 iPhone 的瀏覽器儲存空間。清除 Safari 網站資料、換手機或更換瀏覽器前，請先匯出備份。</p><p class="muted">朋友取得的 JSON 是靜態快照，不是即時協作。若希望朋友永遠看到最新版本，需要把 App 和資料部署到支援雲端更新的網站。</p></div>
+<div class="card"><h3>安裝到 iPhone 主畫面</h3><ol><li>先把此 PWA 部署到 HTTPS 網址並用 Safari 開啟。</li><li>點 Safari 的「分享」圖示。</li><li>選擇「加入主畫面」。</li><li>按「加入」，即可從主畫面開啟。</li></ol><p class="muted">目前下載包是可部署的 PWA 原始檔，不會單靠下載 ZIP 就自動出現在主畫面。</p></div>
+<button class="action secondary" id="resetBtn">重設為初始行程</button>
+</section>
+<footer>Made for a slow, lovely Taipei getaway ✿</footer>
+</main>
+<script>
+const initial={
+places:[
+["大稻埕滷肉飯","美食","12/28","想去"],["迪化街","文化／購物","12/28","想去"],["永樂市場","文化／購物","12/28","想去"],["郭怡美書店","書店","12/28","想去"],["大稻埕碼頭","散步／拍照","12/28","想去"],["寧夏夜市","夜市／美食","12/28","想去"],["赤峰街","文創／購物","12/29","想去"],["朋丁 Pon Ding","書店／文創","12/29","想去"],["按摩（待選店）","放鬆","12/29","想去"],["松山文創園區","文化／拍照","12/30","想去"],["誠品生活松菸","書店／購物","12/30","想去"],["moom bookshop","書店","12/30","想去"],["台北 101","地標／購物","12/30、12/31","想去"],["信義商圈","購物","12/30、12/31","想去"],["市政府周邊跨年","跨年活動","12/31","想去"]],
+days:[
+["12/28（一）抵達・大稻埕","09:40 抵達桃園機場；前往酒店寄放行李；大稻埕滷肉飯；迪化街、永樂市場、郭怡美書店；大稻埕碼頭；寧夏夜市。","機場→酒店：機捷／計程車約 45–70 分；酒店→大稻埕：計程車約 10–20 分；迪化街一帶步行；回寧夏夜市步行或短程車。"],
+["12/29（二）中山・赤峰街","中山站周邊、赤峰街小店、朋丁 Pon Ding、咖啡休息、安排按摩。","酒店→中山／赤峰街：捷運或計程車約 10–20 分；區內步行；按摩店地址確認後再導航。"],
+["12/30（三）松山文創・信義","松山文創園區、誠品生活松菸、moom bookshop、信義商圈、台北 101。","赤峰街／酒店→松山文創：捷運約 25–35 分；松菸→信義商圈：步行約 15–25 分或短程車。"],
+["12/31（四）輕鬆購物・跨年","睡晚一點；咖啡、補買手信；回酒店休息及整理行李；提早晚餐；晚上到信義／市政府周邊跨年。","酒店→信義區：捷運約 20–30 分；跨年散場人潮及交通管制可能大幅增加時間，預留步行及候車時間。"],
+["1/1（五）回香港","CX407 08:00 起飛；凌晨前往桃園機場；不安排觀光。","建議預約機場接送；約 04:00–04:30 出發僅作初步估算，請按航空公司報到要求確認。"]
+],
+packing:{"重要文件":["護照／有效旅遊證件","機票及酒店確認資料","信用卡及現金","旅遊保險資料"],"衣物":["保暖外套及衣物","上衣及長褲","內衣褲及襪子","睡衣","舒適步行鞋","跨年夜穿搭"],"電子用品":["手機及充電器","行動電源","轉插器","耳機"],"個人用品":["護膚品及化妝品","牙刷及洗漱用品","常用藥物","雨傘／輕便雨衣","環保購物袋"]},
+journals:[]
+};
+const READ_ONLY = new URLSearchParams(location.search).get("view")==="1";
+let data=load();
+function load(){try{return JSON.parse(localStorage.getItem("taipeiGirlsTrip"))||structuredClone(initial)}catch(e){return JSON.parse(JSON.stringify(initial))}}
+function save(){localStorage.setItem("taipeiGirlsTrip",JSON.stringify(data))}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function maps(q){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q+" 台北")}
+function show(tab){document.querySelectorAll(".tab").forEach(x=>x.classList.add("hidden"));document.getElementById(tab).classList.remove("hidden");document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab))}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>show(b.dataset.tab));
+function renderDays(){document.getElementById("dayList").innerHTML=data.days.map((d,i)=>`<div class="card"><div class="row"><h3>${esc(d[0])}</h3><span class="tag">Day ${i+1}</span></div><p>${esc(d[1])}</p><div class="notice">🚇 ${esc(d[2])}</div><a target="_blank" rel="noopener" href="${maps(d[0].split(" ")[0]+" 台北行程")}">開啟 Google Maps 搜尋路線 ↗</a></div>`).join("")}
+function renderPlaces(filter="全部"){document.getElementById("placeList").innerHTML=data.places.map((p,i)=>({p,i})).filter(x=>filter==="全部"||x.p[3]===filter).map(({p,i})=>`<div class="place"><div class="row"><b>${esc(p[0])}</b>${READ_ONLY?`<span class="tag">${esc(p[3])}</span>`:`<select class="field" style="width:auto;margin:0;padding:6px" onchange="setStatus(${i},this.value)">${["想去","已去","已預約"].map(s=>`<option ${p[3]===s?"selected":""}>${s}</option>`).join("")}</select>`}</div><p>${esc(p[1])} · ${esc(p[2])}</p><div class="actions"><a class="btn" target="_blank" rel="noopener" href="${maps(p[0])}">Google Maps 導航 ↗</a>${READ_ONLY?"":`<button class="action secondary small" onclick="editPlace(${i})">編輯</button><button class="action secondary small" onclick="deletePlace(${i})">刪除</button>`}</div></div>`).join("")}
+window.setStatus=(i,s)=>{data.places[i][3]=s;save();renderPlaces()};
+window.editPlace=i=>{let p=data.places[i];let n=prompt("景點名稱",p[0]);if(n===null)return;p[0]=n;p[1]=prompt("分類",p[1])??p[1];p[2]=prompt("安排日期",p[2])??p[2];save();renderPlaces()};
+window.deletePlace=i=>{if(confirm("確定刪除此景點？")){data.places.splice(i,1);save();renderPlaces()}};
+if(READ_ONLY) document.getElementById("addPlace").classList.add("hidden");
+document.getElementById("addPlace").onclick=()=>{let n=prompt("景點名稱");if(!n)return;let c=prompt("分類","景點")||"景點";let d=prompt("安排日期","自由安排")||"自由安排";data.places.push([n,c,d,"想去"]);save();renderPlaces()};
+document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>renderPlaces(b.dataset.filter));
+function renderPacking(){document.getElementById("packingList").innerHTML=Object.entries(data.packing).map(([g,items])=>`<div class="card"><h3>${esc(g)}</h3>${items.map((x,i)=>`<label class="check"><input type="checkbox" data-g="${esc(g)}" data-i="${i}"><span>${esc(x)}</span></label>`).join("")}</div>`).join("");document.querySelectorAll("#packingList input").forEach(c=>{c.checked=!!data.checked?.[c.dataset.g+"-"+c.dataset.i];c.disabled=READ_ONLY;c.onchange=()=>{data.checked=data.checked||{};data.checked[c.dataset.g+"-"+c.dataset.i]=c.checked;save()}})}
+function renderJournals(){document.getElementById("journalEntries").innerHTML=data.journals.map(j=>`<div class="card"><b>${esc(j.title)}</b><p>${esc(j.text)}</p><span class="muted">${esc(j.date)}</span></div>`).join("")}
+if(READ_ONLY){document.getElementById("journalTitle").disabled=true;document.getElementById("journalText").disabled=true;document.getElementById("saveJournal").classList.add("hidden")}
+document.getElementById("saveJournal").onclick=()=>{let title=document.getElementById("journalTitle").value.trim(),text=document.getElementById("journalText").value.trim();if(!title&&!text)return;data.journals.unshift({title,text,date:new Date().toLocaleString("zh-TW")});save();document.getElementById("journalTitle").value="";document.getElementById("journalText").value="";renderJournals()};
+document.getElementById("exportBtn").onclick=()=>{let blob=new Blob([JSON.stringify({...data,exportedAt:new Date().toISOString(),readOnlySnapshot:true},null,2)],{type:"application/json"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Taipei-Girls-Trip-share.json";a.click();URL.revokeObjectURL(a.href)};
+if(READ_ONLY){document.getElementById("exportBtn").classList.add("hidden");document.getElementById("resetBtn").classList.add("hidden");document.getElementById("modePill").textContent="朋友唯讀查看";document.querySelector("#settings .card").insertAdjacentHTML("afterbegin",`<div class="notice">這是唯讀分享模式：可以查看行程及開啟地圖，不能修改內容。</div>`)}
+document.getElementById("importBtn").onclick=()=>{let f=document.getElementById("importFile").files[0];if(!f)return alert("請先選擇 JSON 檔案");let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(!x.places||!x.days||!x.packing)throw Error();data=x;save();renderAll();alert("匯入完成")}catch(e){alert("檔案格式不正確")}};r.readAsText(f)};
+document.getElementById("resetBtn").onclick=()=>{if(confirm("重設會清除目前本機修改，確定嗎？")){data=JSON.parse(JSON.stringify(initial));save();renderAll()}};
+document.getElementById("weatherBtn").onclick=async()=>{let el=document.getElementById("weather");el.textContent="正在查詢…";try{let r=await fetch("https://api.open-meteo.com/v1/forecast?latitude=25.033&longitude=121.565&current=temperature_2m,relative_humidity_2m,precipitation,weather_code&timezone=Asia%2FTaipei");let j=await r.json();el.textContent=`台北目前 ${j.current.temperature_2m}°C · 濕度 ${j.current.relative_humidity_2m}% · 降雨 ${j.current.precipitation} mm。此為目前天氣，不代表 12/28–1/1 預報。`;}catch(e){el.textContent="暫時無法取得天氣，請稍後再試。"}};
+function renderAll(){renderDays();renderPlaces();renderPacking();renderJournals()}
+renderAll();
+if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("./sw.js").catch(()=>{});
+</script>
+</body></html>
